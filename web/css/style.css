@@ -1,0 +1,274 @@
+/* Модальное окно 10 лет*/
+#bg_popup10 {
+width: 700 px;
+height: 800 px;
+
+background-color: rgba(0, 0, 0, 0.8);
+display: none;
+position: fixed;
+z-index: 99999;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+}
+
+#popup10 {
+margin: 3% auto;
+
+padding: 5px 20px 13px 20px;
+/*border: 2px solid #1BA600;*/
+position: relative;
+-webkit-box-shadow: 0px 0px 20px #000;
+-moz-box-shadow: 0px 0px 20px #000;
+box-shadow: 0 5px 15px rgba(0,0,0,.5);
+/*box-shadow: 0px 0px 20px #000;*/
+
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+/*border-radius: 18px;*/
+}
+
+/* Модальное окно карантина */
+#bg_popup {
+    width: 700 px;
+    height: 800 px;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#popup {
+    margin: 3% auto;
+
+    padding: 5px 20px 13px 20px;
+    /*border: 2px solid #1BA600;*/
+    position: relative;
+    -webkit-box-shadow: 0px 0px 20px #000;
+    -moz-box-shadow: 0px 0px 20px #000;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    /*box-shadow: 0px 0px 20px #000;*/
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    /*border-radius: 18px;*/
+}
+
+
+
+/* Модальное окно днюхи*/
+
+#bg_birsday{
+display: none;
+position: fixed;
+z-index: 99998;
+top: 20%;
+/*right: 20%;
+bottom: 20%;*/
+left: 20%;
+
+}
+
+#popup_birsday {
+
+
+
+margin: 3% auto;
+position: relative;
+-webkit-box-shadow: 0px 0px 20px #000;
+-moz-box-shadow: 0px 0px 20px #000;
+box-shadow: 0px 0px 20px #000;
+background-color:#63D3EE;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+
+border-radius: 18px;
+}
+  
+.close-covid-19{
+/*display:block;*/
+position:absolute;
+top:-12px;
+/*right:5px;*/
+width:25px;
+height:25px;
+line-height:28px;
+color:#fff;
+background:#6CB6A9;
+cursor:pointer;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+-ms-border-radius: 15px;
+-o-border-radius: 15px;
+border-radius: 15px;
+-moz-box-shadow: 1px 1px 3px #000;
+-webkit-box-shadow: 1px 1px 3px #000;
+box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+background-color:#f30;
+} 
+
+.modal-body-birsday {
+    max-height: 500px;
+    /*overflow-y: auto;*/
+    overflow: auto;
+    background: url(../img/fon.png);
+    background-size: cover;
+    
+}
+
+
+/* Фон на всю ширину окна */
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: -2;
+}
+
+@media screen and (max-width: 1024px){
+  img.bg {
+    left: 50%;
+    margin-left: -512px; }
+}
+
+
+
+
+/* изображение цели адаптиность*/
+.goal-picture{
+  display: block;
+  height: auto;
+  max-width: 75%;
+  /* дополнительно их выровняем по центру */
+  margin-left: auto;
+  margin-right: auto;
+  /* и добавим внешний нижний отступ */
+  margin-top:20px ;
+  margin-bottom: 20px;
+}
+
+/* КАРТОЧКА ГЛАВНОЙ СТРАНИЦЫ */
+/* стили самой карточки*/
+.card {
+background-color: #E4EBF1;
+}
+/* изображение на карточках главной страницы*/
+.card-image{
+  height: auto;
+  max-width: 60%;
+  /* дополнительно их выровняем по центру */
+  margin-left: auto;
+  margin-right: auto;
+  /* и добавим внешний нижний отступ */
+  margin-top:40px ;
+  margin-bottom: 40px;
+}
+
+/*  Горизонтальный разделитель в карточке */
+.card-hr{
+   border: 1px solid #0064A2;
+} 
+
+
+
+
+/* Резиновая разметка главной страницы*/
+/* Левый край гланой страницы*/
+.nav {
+    float: left;
+    /*width: 220px;*/
+    padding:20px;
+}
+
+.cely {
+	/*float: right;*/
+}
+
+/* Логотип */ 
+.logoGas {
+  padding: 20px 20px 20px 20px;
+  max-width:100%;
+  height:auto
+}
+
+.card-title {
+	color: white; 
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.birth {
+  overflow: auto; 
+}
+
+
+
+
+
+
+.news {
+  overflow: auto; 
+  max-height: 580px; 
+}
+
+/* Principle style */
+.image_off, #principleImages:hover .image_on, #principleImages:active .image_on {
+  display:none
+}
+
+.image_on, #principleImages:hover .image_off, #principleImages:active .image_off {
+  display:block
+}
+
+#principle {
+  cursor: pointer;
+}
+
+.nav-tabs{
+  border-bottom:0px;
+}
+.nav-tabs a{
+ color: #000000;
+}
+
+/* аккардион на странице журналы*/
+.ui-accordion .ui-accordion-header {
+	display: flex;
+	cursor: pointer;
+	
+	margin: 2px 0 0 0;
+	padding: .5em .5em .5em .7em;
+	font-size: 150%;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+	font-weight: normal;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+	border: 1px solid #0869b1;
+	background: #45ace0;
+	font-weight: normal;
+}
+.ui-widget-content {
+	border: 1px solid #0869b1;
+	background:inherit; 
+}

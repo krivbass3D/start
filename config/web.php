@@ -7,7 +7,11 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'aliases' => [
+    'defaultRoute' => 'home/index',
+    'language' => 'ru',
+    'name' =>'Корпоративний сайт ПАТ Криворіжгаз',
+    'layout' =>'start',
+     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
@@ -15,7 +19,7 @@ $config = [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'jsJtOJgLQntmlvWZbRyDM8AvBGGsrZiW',
-            //'baseUrl' => '',
+            'baseUrl' => '',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
