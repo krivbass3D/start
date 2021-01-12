@@ -96,10 +96,6 @@ require_once "block/head.php";
 //require_once "block/print_of_the_day.php";
 //require_once "block/script.php";
 ?>
-<script>
-
-
-</script>
 <?php $this->endBody() ?>
 </body>
 </html>
